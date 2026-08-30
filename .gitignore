@@ -1,0 +1,5 @@
+# Ignore personal photo
+IMG-20250223-WA0134.jpg
+*.jpg
+*.jpeg
+*.png
