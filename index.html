@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Jain | Portfolio</title>
+    <meta name="description" content="Portfolio of Shashank Jain - Data Analyst, Data Scientist, and Software Developer specializing in Python, Machine Learning, SQL, and interactive dashboards.">
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+
+    <!-- Boxicons CSS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+
+    <!-- =================================================================
+        HEADER / NAVBAR
+        ================================================================= -->
+    <header class="header">
+        <a href="#home" class="logo">Shashank<span>.</span></a>
+
+        <!-- Mobile Menu Hamburger Icon -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="nav-link active" style="--i:1;">Home</a>
+            <a href="#about" class="nav-link" style="--i:2;">About</a>
+            <a href="#experience" class="nav-link" style="--i:3;">Experience</a>
+            <a href="#skills" class="nav-link" style="--i:4;">Skills</a>
+            <a href="#certificates" class="nav-link" style="--i:5;">Certificates</a>
+            <a href="#portfolio" class="nav-link" style="--i:6;">Portfolio</a>
+            <a href="#contact" class="nav-link" style="--i:7;">Contact</a>
+        </nav>
+    </header>
+
+    <!-- =================================================================
+        HERO / HOME SECTION
+        ================================================================= -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Shashank Jain</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I build modern, interactive, and high-performance web applications...</p>
+            
+            <!-- Social Media Links -->
+            <div class="home-sci">
+                <a href="https://instagram.com/shashank_jain_27" target="_blank" rel="noopener noreferrer" style="--i:6;" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                <a href="https://www.linkedin.com/in/shashank-jain-a81a69218/" target="_blank" rel="noopener noreferrer" style="--i:7;" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/shashankjain843" target="_blank" rel="noopener noreferrer" style="--i:8;" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                <a href="https://wa.me/917878921728" target="_blank" rel="noopener noreferrer" style="--i:9;" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+            </div>
+
+            <!-- Call to Action button -->
+            <a href="#about" class="btn-box">More About Me</a>
+        </div>
+
+        <!-- Hero Avatar / Profile Photo -->
+        <div class="home-img">
+            <div class="img-box">
+                <div class="liquid-glow"></div>
+                <img src="IMG-20250223-WA0134.jpg" alt="Shashank Jain" class="hero-photo">
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        ABOUT SECTION
+        ================================================================= -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <div class="about-img-box">
+                <img src="IMG-20250223-WA0134.jpg" alt="Shashank Jain" class="about-photo">
+            </div>
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>Data Analyst & Machine Learning Practitioner</h3>
+            
+            <p class="about-lead">
+                I transform complex data architectures into high-impact business intelligence and production-grade predictive intelligence.
+            </p>
+
+            <p>
+                Currently completing my <strong>B.Tech in CSE (Data Science)</strong> at Teerthanker Mahaveer University (CGPA 8.0/10.0) and driving quantitative insights as a <strong>Data Analyst Intern at Appic Software Development</strong>. My expertise bridges statistical computing, machine learning modeling (XGBoost, CNN-LSTM), ETL pipeline engineering, and interactive dashboard systems in Power BI and Streamlit.
+            </p>
+
+            <!-- Professional Impact Metrics Grid -->
+            <div class="about-metrics">
+                <div class="metric-card">
+                    <h4>200k+</h4>
+                    <span>Records Analyzed</span>
+                </div>
+                <div class="metric-card">
+                    <h4>+25%</h4>
+                    <span>Data Quality Gain</span>
+                </div>
+                <div class="metric-card">
+                    <h4>−30%</h4>
+                    <span>Reporting Latency</span>
+                </div>
+                <div class="metric-card">
+                    <h4>8.0 / 10</h4>
+                    <span>Academic CGPA</span>
+                </div>
+            </div>
+
+            <!-- Dual Resume Selection & Download Section -->
+            <div class="resume-download-wrapper">
+                <div class="resume-select-box">
+                    <label for="resume-select"><i class='bx bx-file'></i> Select Resume Track:</label>
+                    <select id="resume-select" class="custom-select">
+                        <option value="Resume (2).pdf" data-filename="Shashank_Jain_Data_Analyst_Resume.pdf">📊 Data Analyst Resume</option>
+                        <option value="Shashank Jain (1).pdf" data-filename="Shashank_Jain_Data_Scientist_Resume.pdf">🤖 Data Scientist Resume</option>
+                    </select>
+                </div>
+
+                <div class="resume-btn-group">
+                    <a href="Resume (2).pdf" download="Shashank_Jain_Data_Analyst_Resume.pdf" class="btn-box" id="resume-btn">
+                        <i class='bx bx-download'></i> Download Selected Resume
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        EXPERIENCE & EDUCATION SECTION
+        ================================================================= -->
+    <section class="experience" id="experience">
+        <h2 class="heading">My <span>Journey</span></h2>
+
+        <div class="timeline-row">
+            <!-- Experience Column -->
+            <div class="timeline-column">
+                <h3 class="title"><i class='bx bx-briefcase'></i> Work Experience</h3>
+
+                <div class="timeline-box">
+                    <div class="timeline-content">
+                        <div class="year"><i class='bx bx-calendar'></i> Jun 2026 – Present</div>
+                        <h3>Data Analyst Intern — <span>Appic Software Development</span></h3>
+                        <p>
+                            Conducted exploratory data analysis (EDA) across 10k+ records, elevating data cleanliness by 25%. Engineered automated Power BI dashboards tracking key operational KPIs, cutting report turnaround time by 30%.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Education Column -->
+            <div class="timeline-column">
+                <h3 class="title"><i class='bx bx-graduation'></i> Education</h3>
+
+                <div class="timeline-box">
+                    <div class="timeline-content">
+                        <div class="year"><i class='bx bx-calendar'></i> 2022 – 2026</div>
+                        <h3>B.Tech, CSE (Data Science) — <span>TMU, Moradabad</span></h3>
+                        <p>
+                            Graduating with a strong academic standing (CGPA: <strong>8.0 / 10.0</strong>). Core coursework includes Machine Learning, DBMS, Deep Learning, Advanced Applied Statistics, Big Data Analytics, and Python Software Development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        SKILLS SECTION
+        ================================================================= -->
+    <section class="skills" id="skills">
+        <h2 class="heading">My <span>Skills</span></h2>
+
+        <div class="skills-row">
+            <!-- Column 1: Technical & ML Skills -->
+            <div class="skills-column">
+                <h3 class="title">Languages & Machine Learning</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Python (Pandas, NumPy, Scikit-Learn) <span>95%</span></h3>
+                            <div class="bar"><span style="--w: 95%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>SQL / PostgreSQL / SQLite <span>90%</span></h3>
+                            <div class="bar"><span style="--w: 90%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Machine Learning (XGBoost, CNN-LSTM) <span>85%</span></h3>
+                            <div class="bar"><span style="--w: 85%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Deep Learning (TensorFlow, PyTorch) <span>80%</span></h3>
+                            <div class="bar"><span style="--w: 80%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Column 2: BI, Tools & Deployment -->
+            <div class="skills-column">
+                <h3 class="title">BI, Visualization & Tools</h3>
+
+                <div class="skills-box">
+                    <div class="skills-content">
+                        <div class="progress">
+                            <h3>Power BI & Tableau Dashboards <span>92%</span></h3>
+                            <div class="bar"><span style="--w: 92%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Streamlit & Interactive Apps <span>90%</span></h3>
+                            <div class="bar"><span style="--w: 90%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>FastAPI & Backend Development <span>82%</span></h3>
+                            <div class="bar"><span style="--w: 82%;"></span></div>
+                        </div>
+
+                        <div class="progress">
+                            <h3>Docker, GCP & Git / GitHub <span>80%</span></h3>
+                            <div class="bar"><span style="--w: 80%;"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skill Cards / Badges Grid -->
+        <div class="skill-cards-grid">
+            <div class="skill-badge-card" style="--i:1;">
+                <i class='bx bxl-python'></i>
+                <h4>Languages & DB</h4>
+                <p>Python, SQL, PostgreSQL, SQLite</p>
+            </div>
+            <div class="skill-badge-card" style="--i:2;">
+                <i class='bx bx-brain'></i>
+                <h4>ML & Modeling</h4>
+                <p>Scikit-Learn, TensorFlow, XGBoost, CNN-LSTM</p>
+            </div>
+            <div class="skill-badge-card" style="--i:3;">
+                <i class='bx bx-bar-chart-alt-2'></i>
+                <h4>BI & Visualization</h4>
+                <p>Power BI, Tableau, Streamlit, Seaborn</p>
+            </div>
+            <div class="skill-badge-card" style="--i:4;">
+                <i class='bx bx-cloud'></i>
+                <h4>Backend & Cloud</h4>
+                <p>FastAPI, Docker, GCP, Git/GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        CERTIFICATIONS SECTION
+        ================================================================= -->
+    <section class="certificates" id="certificates">
+        <h2 class="heading">Certifications & <span>Credentials</span></h2>
+
+        <div class="certificates-grid">
+            <!-- Cert 1 -->
+            <div class="cert-card">
+                <div class="cert-icon"><i class='bx bx-award'></i></div>
+                <div class="cert-info">
+                    <span class="cert-year">2025</span>
+                    <h4>Data Analytics & Reporting Professional</h4>
+                    <p class="cert-issuer">TCS iON</p>
+                    <p class="cert-desc">Advanced data processing, KPI reporting architectures, and enterprise business intelligence frameworks.</p>
+                </div>
+            </div>
+
+            <!-- Cert 2 -->
+            <div class="cert-card">
+                <div class="cert-icon"><i class='bx bx-badge-check'></i></div>
+                <div class="cert-info">
+                    <span class="cert-year">2025</span>
+                    <h4>Data Analysis Certification</h4>
+                    <p class="cert-issuer">Deloitte</p>
+                    <p class="cert-desc">Quantitative problem solving, commercial analytics, and data-driven client consulting simulations.</p>
+                </div>
+            </div>
+
+            <!-- Cert 3 -->
+            <div class="cert-card">
+                <div class="cert-icon"><i class='bx bx-certification'></i></div>
+                <div class="cert-info">
+                    <span class="cert-year">2025</span>
+                    <h4>Data Analytics Certificate</h4>
+                    <p class="cert-issuer">Code Alpha</p>
+                    <p class="cert-desc">Exploratory data analysis, statistical validation, and predictive dashboard development.</p>
+                </div>
+            </div>
+
+            <!-- Cert 4 -->
+            <div class="cert-card">
+                <div class="cert-icon"><i class='bx bx-chart'></i></div>
+                <div class="cert-info">
+                    <span class="cert-year">2024</span>
+                    <h4>Statistics using R & Python</h4>
+                    <p class="cert-issuer">TCS iON</p>
+                    <p class="cert-desc">Hypothesis testing, probability distributions, regression modeling, and statistical inferencing.</p>
+                </div>
+            </div>
+
+            <!-- Cert 5 -->
+            <div class="cert-card">
+                <div class="cert-icon"><i class='bx bx-layout'></i></div>
+                <div class="cert-info">
+                    <span class="cert-year">2024</span>
+                    <h4>HR Salary Dashboard Certification</h4>
+                    <p class="cert-issuer">TCS iON</p>
+                    <p class="cert-desc">Payroll analytics, compensation benchmarking, and decision-support interactive dashboards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        PORTFOLIO / PROJECTS SECTION
+        ================================================================= -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <!-- Project Card 1 -->
+            <div class="portfolio-box">
+                <div class="portfolio-layer-bg">
+                    <i class='bx bx-brain icon-bg'></i>
+                </div>
+                <div class="portfolio-layer">
+                    <h4>Sleep Pattern & Mood Predictor</h4>
+                    <p>Biosignal analysis system classifying sleep stages via CNN-LSTM & predicting dream mood with XGBoost from EEG/ECG/GSR data. Backend on FastAPI with Claude AI.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>TensorFlow</span><span>XGBoost</span><span>Streamlit</span><span>Docker</span>
+                    </div>
+                    <a href="https://github.com/shashankjain843/Sleep-Pattern-and-Dream-Mood-Ai" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Sleep Pattern & Mood AI Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="portfolio-box">
+                <div class="portfolio-layer-bg">
+                    <i class='bx bx-trending-up icon-bg'></i>
+                </div>
+                <div class="portfolio-layer">
+                    <h4>Sales & Revenue Analytics</h4>
+                    <p>ETL pipeline analyzing 100k+ transactions. Applied Holt's linear forecasting and RFM segmentation, uncovering a 30% discount threshold improving margins by 1.8%.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>SQLite</span><span>Streamlit</span><span>RFM Analysis</span><span>Forecasting</span>
+                    </div>
+                    <a href="https://github.com/shashankjain843/Sales-and-Revenue-Insights" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Sales & Revenue Insights Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="portfolio-box">
+                <div class="portfolio-layer-bg">
+                    <i class='bx bx-plus-medical icon-bg'></i>
+                </div>
+                <div class="portfolio-layer">
+                    <h4>Healthcare Risk Profiling</h4>
+                    <p>Predictive pipeline for 30-day patient readmissions using XGBoost (84.2% ROC-AUC) with disease outbreak forecasting and interactive treatment survival curves.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Pandas</span><span>PostgreSQL</span><span>XGBoost</span><span>Streamlit</span>
+                    </div>
+                    <a href="https://github.com/shashankjain843/Healthcare-Analytics-Dashboard" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Healthcare Analytics Dashboard Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+
+            <!-- Project Card 4 -->
+            <div class="portfolio-box">
+                <div class="portfolio-layer-bg">
+                    <i class='bx bx-briefcase-alt icon-bg'></i>
+                </div>
+                <div class="portfolio-layer">
+                    <h4>HR Salary Predictor Dashboard</h4>
+                    <p>Cleaned 200k+ payroll records, benchmarked 5 regression models with GridSearchCV hyperparameter tuning (75% faster), and built an interactive HR decision dashboard.</p>
+                    <div class="project-tags">
+                        <span>Python</span><span>Scikit-Learn</span><span>Streamlit</span><span>GridSearchCV</span>
+                    </div>
+                    <a href="https://github.com/shashankjain843/HR-Salary-Dashboard---Train-the-Dataset-and-Predict-Salary-" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View HR Salary Predictor Dashboard Project"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        CONTACT SECTION
+        ================================================================= -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <div class="contact-container">
+            <!-- Left Info Panel -->
+            <div class="contact-info">
+                <h3>Let's Connect & Collaborate</h3>
+                <p>Open to conversations about data, analytics, machine learning, and building high-impact data products that ship.</p>
+
+                <div class="contact-details">
+                    <!-- Phone -->
+                    <div class="detail-item">
+                        <i class='bx bx-phone-call'></i>
+                        <div>
+                            <h4>Phone / WhatsApp</h4>
+                            <span><a href="tel:+917878921728" style="color: #fff;">+91 78789 21728</a></span>
+                        </div>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="detail-item">
+                        <i class='bx bx-envelope'></i>
+                        <div>
+                            <h4>Email</h4>
+                            <span><a href="mailto:realshashankjain@gmail.com" style="color: #fff;">realshashankjain@gmail.com</a></span>
+                        </div>
+                    </div>
+
+                    <!-- Location -->
+                    <div class="detail-item">
+                        <i class='bx bx-map-pin'></i>
+                        <div>
+                            <h4>Location</h4>
+                            <span>Jaipur, Rajasthan, India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Circular Social Links Matching Home Section -->
+                <div class="contact-sci">
+                    <a href="https://instagram.com/shashank_jain_27" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://www.linkedin.com/in/shashank-jain-a81a69218/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/shashankjain843" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+                    <a href="https://wa.me/917878921728" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+                </div>
+            </div>
+
+            <!-- Right Interactive Form -->
+            <form action="#" class="contact-form" id="contactForm">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Full Name" required>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="mobile" placeholder="Mobile Number">
+                    <input type="text" id="subject" placeholder="Email Subject" required>
+                </div>
+                <textarea id="message" cols="30" rows="8" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn-box submit-btn">Send Message <i class='bx bx-send'></i></button>
+                <div id="form-feedback" class="form-feedback"></div>
+            </form>
+        </div>
+    </section>
+
+    <!-- =================================================================
+        FOOTER
+        ================================================================= -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2026 by <span>Shashank Jain</span> | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home" aria-label="Back to Top"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- Typed.js for Rotating Roles Effect -->
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+
+    <!-- Main JavaScript File -->
+    <script src="main.js"></script>
+</body>
+</html>
