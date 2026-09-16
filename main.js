@@ -100,16 +100,29 @@ if (skillsSection) {
 // -----------------------------------------------------------------
 const resumeSelect = document.getElementById('resume-select');
 const resumeBtn = document.getElementById('resume-btn');
+const resumePreviewBtn = document.getElementById('resume-preview-btn');
 
-if (resumeSelect && resumeBtn) {
-    resumeSelect.addEventListener('change', function () {
-        const selectedOption = resumeSelect.options[resumeSelect.selectedIndex];
-        const filePath = selectedOption.value;
-        const downloadName = selectedOption.getAttribute('data-filename');
+function updateResumeLinks() {
+    if (!resumeSelect) return;
+    const selectedOption = resumeSelect.options[resumeSelect.selectedIndex];
+    if (!selectedOption) return;
 
+    const filePath = selectedOption.value;
+    const downloadName = selectedOption.getAttribute('data-filename') || filePath;
+
+    if (resumeBtn) {
         resumeBtn.setAttribute('href', filePath);
         resumeBtn.setAttribute('download', downloadName);
-    });
+    }
+    if (resumePreviewBtn) {
+        resumePreviewBtn.setAttribute('href', filePath);
+    }
+}
+
+if (resumeSelect) {
+    resumeSelect.addEventListener('change', updateResumeLinks);
+    // Initialize on page load so links always match the selected option
+    updateResumeLinks();
 }
 
 // -----------------------------------------------------------------
